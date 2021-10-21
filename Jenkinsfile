@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/siji-sathyan/evaluation.git'
+                git branch: 'main', url: 'https://github.com/siji-sathyan/mavenversion.git'
             }    
         }
         stage('clean-install') {
