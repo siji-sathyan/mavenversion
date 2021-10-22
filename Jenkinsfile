@@ -48,7 +48,7 @@ pipeline {
         stage('deploy'){
             steps{
                 sshagent(['deploy-user']) {
-                    sh "scp -o StrictHostKeyChecking=no /home/jenkins/agent/workspace/siji-training/maven-version/target/evaluation-0.0.1-SNAPSHOT.war ec2-user@3.238.185.140:/opt/apache-tomcat-8.5.71/webapps"      
+                    sh "scp -o StrictHostKeyChecking=no /home/jenkins/agent/workspace/siji-training/maven-version/target/evaluation-0.0.1-SNAPSHOT.war ec2-user@3.235.161.228:/opt/apache-tomcat-8.5.71/webapps"      
             }
           }
         }
